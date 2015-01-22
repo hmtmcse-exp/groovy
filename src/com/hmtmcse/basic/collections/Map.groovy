@@ -33,5 +33,26 @@ class Map {
         //Get Data From Map Technic-3
         println(map2.name);
         println(map2.department);
+
+
+
+        def myMap = [
+                "touhid":[
+                        "name":"Touhid",
+                        "intake":"11th"
+                ],
+                "mia":[
+                        "name":"Mia",
+                        "intake":"11th"
+                ],
+        ]
+
+        println("\n=========== Nested Map Each ===========")
+        //Get Data From Map Technic-3
+
+        myMap.values().each{
+           println(it.name)
+        }
+        println(myMap["touhid"])
     }
 }
