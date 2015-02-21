@@ -54,5 +54,16 @@ class Map {
            println(it.name)
         }
         println(myMap["touhid"])
+
+
+
+        def my = "My Pen", ur = "Cow"
+
+        myMap = [
+                my:["Pen":"Red"],
+
+        ]
+
+
     }
 }
