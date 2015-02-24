@@ -17,12 +17,18 @@ class Shell {
 
     public static void main(String[] args) {
 
+
+        Random rand = new Random();
+
+
         int x = 0;
 
         def process = "ping google.com -t".execute();
         process.in.eachLine { line ->
             println line
             println(x)
+            int  n = rand.nextInt(50) + 1;
+            println(n)
             if (x == 20){
                 process.destroy();
             }
